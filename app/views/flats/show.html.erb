@@ -1,0 +1,48 @@
+<div class="map" style="background-image: url('../app/assets/images/flats.jpeg')"></div>
+<div class="container">
+  <div class="row ">
+    <div class="col-8 bg-light m-2">
+      <h1><%= @flat.name %></h1>
+      <p>Address: <%= @flat.address %></p>
+    </div>
+    <div class="col-3 bg-light m-2">
+      <h6>Book this place!</h6>
+   <div class="container">
+    <form>
+        <div class="form-group">
+            <label for="fromDate">From:</label>
+            <input type="date" class="form-control" id="fromDate" name="From">
+        </div>
+        <div class="form-group">
+            <label for="toDate">To:</label>
+            <input type="date" class="form-control" id="toDate" name="To">
+        </div>
+        <button type="submit" class="btn btn-success mt-3 w-100">Book</button>
+    </form>
+</div>
+    </div>
+    <div class="col-8 bg-light m-2">
+      <h3>A bit more about this flat...</h3>
+       <p>Description: <%= @flat.description %></p>
+       <p>Integer sodales dui enim, in volutpat neque finibus id. Quisque at egestas nibh. Morbi quis odio sit amet nunc gravida cursus non et mauris.</p>
+    </div>
+    <div class="col-3 bg-light m-2">
+      <h5>Details</h5>
+      <div class="d-flex">
+      <p style="margin-right: 10px;"><i class="fa-solid fa-dollar-sign"></i> <%= @flat.price_per_night %></p>
+      <p><i class="fa-solid fa-users"></i>: <%= @flat.number_of_guests %></p>
+    </div>
+    </div>
+    <div class="col-3 bg-light m-2 float-right">
+      <div class="flex-d">
+      <p>share</p>
+      <div>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-pinterest"></i>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
